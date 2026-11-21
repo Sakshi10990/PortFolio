@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sakshi.exe — Product Management Portfolio</title>
+<meta name="description" content="Sakshi Singh: an aspiring Product Manager with an engineering background, an analytical brain, and an unreasonable number of questions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%A7%A0%3C/text%3E%3C/svg%3E">
+
+</head>
+<body>
+<div id="prog"></div>
+<nav aria-label="Main">
+<a class="logo" href="#home">Sakshi<b>.exe</b></a>
+<ul><li><a href="#home" data-s="home">Home</a></li><li><a href="#work" data-s="work">The Receipts</a></li><li><a href="#lore" data-s="lore">The Lore</a></li><li><a href="#docs" data-s="docs">Official Docs</a></li><li><a href="#contact" data-s="contact">Contact</a></li></ul>
+</nav>
+
+<main>
+<section id="home"><div class="wrap">
+<h1>Hello. I’m <span class="hl y">Sakshi.</span><br>I turn <span class="hl p">‘wait, why?’</span> into <span class="hl m">‘here’s the plan.’</span></h1>
+<p class="sub">An aspiring Product Manager with an engineering background, an analytical brain, and an unreasonable number of questions.</p>
+<div class="ctas"><a class="btn" href="#work">Explore the Receipts <span class="ar">→</span></a><a class="btn alt" href="#lore">Get to know the chaos</a></div>
+<div class="term" id="term" aria-label="Animated terminal" aria-live="off"></div>
+</div>
+<button class="fl s1 stk" data-m="Short answer: not yet. Long answer: also not yet.">Have we validated this?</button>
+<button class="fl s2 stk" data-m="It’s not a bug. It’s an unscheduled learning opportunity.">Not a feature.</button>
+<button class="fl s3 stk" data-m="Currently overthinking. Please hold.">Currently overthinking.</button>
+<button class="fl s4 stk" data-m="Scope creep detected. Pretending to be surprised.">⚠ Scope creep detected.</button>
+
+</section>
+
+<section id="dodge"><h2 style="font-size:clamp(26px,4vw,40px)">One quick question...</h2>
+<p style="font-size:20px;margin:8px 0">Are you here to hire me?</p>
+<div class="arena" id="arena"><a class="btn" id="yes" href="#work">YES</a><button class="btn" id="no" type="button">NO</button></div>
+<div id="msg" role="status"></div></section>
+
+<section id="work"><div class="wrap">
+<h2>The Receipts</h2><p class="kicker">Claims are easy. Here’s the evidence.</p>
+<div class="grid" id="projects"></div></div></section>
+
+<section id="lore"><div class="wrap">
+<h2>The Lore</h2><p class="kicker">A brief history of how I got here.</p>
+<div class="tl" id="tl"></div>
+<h3 style="margin:60px 0 20px;font-size:30px">The Inner Workings</h3>
+<div class="grid" id="about"></div>
+<div style="margin-top:30px" id="stickers"></div>
+</div></section>
+
+<section id="docs"><div class="wrap">
+<h2>Official Documentation</h2><p class="kicker">Official documentation, a.k.a. my resume. A document that actually has a purpose. Unlike most terms and conditions.</p>
+<div id="resume"></div><div id="certs" style="margin-top:50px"></div></div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Let’s Work Something Out.</h2>
+<p class="kicker">Have an opportunity, an interesting problem, or a question? My inbox is less chaotic than this website.</p>
+<div class="ctas" id="links"></div></div></section>
+</main>
+
+<footer>
+<div class="big" aria-label="Sakshi.exe">Sakshi<span>.exe</span></div>
+<p style="max-width:620px;margin:20px auto">Built with curiosity, questionable amounts of caffeine, and years of academic investment. ROI still under evaluation.</p>
+<button class="btn" id="top" type="button">Back to top <span class="ar">↑</span></button>
+</footer>
+
+<div id="detail" role="dialog" aria-modal="true" aria-label="Project detail"></div>
+<div id="stat"><div class="pan" id="pan"></div><button type="button" aria-expanded="false" aria-controls="pan">Sakshi.exe: Operational-ish</button></div>
+<div id="rb" role="dialog" aria-modal="true" aria-label="Resume preview"><button type="button" class="btn alt" id="rbx">✕ Close</button></div>
+<div id="lb" role="dialog" aria-modal="true" aria-label="Certificate preview"><button type="button" class="btn alt" id="lbx">✕ Close</button><img alt=""></div>
+<div id="toast" role="status"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
